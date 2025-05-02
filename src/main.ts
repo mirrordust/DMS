@@ -1,10 +1,15 @@
-import './assets/main.css'
+import './assets/css/main.css'
+
+import '@fontsource/poppins'
+import '@fontsource/poppins/500.css'
+import '@fontsource/poppins/600.css'
+import '@fontsource/poppins/700.css'
+import '@fontsource/poppins/800.css'
+import '@fontsource/poppins/900.css'
 
 import '@fontsource/roboto-condensed'
-import '@fontsource/rem' // Defaults to weight 400
-import '@fontsource/poppins' // Defaults to weight 400
-import '@fontsource/poppins/400.css'
-import '@fontsource/inter' // Defaults to weight 400
+import '@fontsource/rem'
+import '@fontsource/inter'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
