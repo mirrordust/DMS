@@ -1,5 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import TitleSection from '@/components/TitleSection.vue'
+import AboutSection from '@/components/AboutSection.vue'
+import NewsSection from '@/components/NewsSection.vue'
+</script>
 
 <template>
-  <main>XX</main>
+  <TitleSection />
+  <AboutSection />
+  <NewsSection />
 </template>

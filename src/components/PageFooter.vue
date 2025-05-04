@@ -23,18 +23,13 @@
         </li>
       </ul>
     </div>
-
-    <div class="secretariats">
-      <h3>WSDI Secretariats</h3>
-      <div class="contact">Aubrey (aubreyliao@ust.hk)</div>
-      <div class="contact">Tu Kexi (tukexintkx@gmail.com)</div>
-    </div>
   </footer>
 </template>
 
 <style scoped>
 .footer {
   background: #000000;
+  padding-bottom: 30px;
 }
 
 .links {
@@ -49,32 +44,6 @@
 
 .current_link {
   color: #ffffff;
-}
-
-.secretariats {
-  font-family: 'Poppins';
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding-left: 72px;
-  padding-top: 36px;
-  padding-bottom: 44px;
-  color: #ffffff80;
-}
-
-h3 {
-  font-weight: 600;
-  font-size: 16px;
-  /* line-height: 100%; */
-  letter-spacing: 0;
-}
-
-.contact {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 40px;
-  letter-spacing: 0;
-  padding-left: 30px;
 }
 
 @media (max-width: 1024px) {

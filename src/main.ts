@@ -1,15 +1,14 @@
 import './assets/css/main.css'
 
-import '@fontsource/poppins'
+import '@fontsource/poppins/400.css'
 import '@fontsource/poppins/500.css'
 import '@fontsource/poppins/600.css'
 import '@fontsource/poppins/700.css'
 import '@fontsource/poppins/800.css'
 import '@fontsource/poppins/900.css'
-
-import '@fontsource/roboto-condensed'
-import '@fontsource/rem'
-import '@fontsource/inter'
+import '@fontsource/roboto-condensed/400.css'
+import '@fontsource/rem/600.css'
+import '@fontsource/inter/400.css'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'

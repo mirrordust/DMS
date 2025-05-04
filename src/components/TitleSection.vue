@@ -3,9 +3,13 @@
 <template>
   <div class="content-container">
     <h1>
-      <span class="emphasize">Digital Meteorological</span> Services Innovation Lab <br />
-      at HKUST <span class="emphasize">Shanghai</span> Centre
+      <span>Digital Meteorological</span> Services Innovation Lab <br />
+      at HKUST <span>Shanghai</span> Centre
     </h1>
+
+    <div class="background">
+      <img src="/images/background.png" class="cover" />
+    </div>
   </div>
 </template>
 
@@ -24,12 +28,28 @@ h1 {
   line-height: 72px;
   letter-spacing: 0;
   text-align: center;
-  color: #0b0717;
+  color: hsla(255, 53%, 6%, 1);
+  padding-top: 94px;
+  padding-bottom: 107px;
 }
 
-.emphasize {
+h1 > span {
+  font-weight: 600;
   font-size: 52px;
-  color: #754bff;
+  color: hsla(254, 100%, 65%, 1);
+}
+
+.background {
+  width: min(100%, 1300px);
+  overflow: hidden;
+  border-radius: 32px;
+  padding-bottom: 80px;
+}
+
+.cover {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 @media (min-width: 1024px) {
