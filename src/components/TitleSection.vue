@@ -3,12 +3,12 @@
 <template>
   <div class="content-container">
     <h1>
-      <span>Digital Meteorological</span> Services Innovation Lab <br />
-      at HKUST <span>Shanghai</span> Centre
+      <span class="emphasize">Digital Meteorological</span> Services Innovation Lab <br />
+      at HKUST <span class="emphasize">Shanghai</span> Centre
     </h1>
 
     <div class="background">
-      <img src="/images/background.png" class="cover" />
+      <img src="/images/cover.png" class="cover" />
     </div>
   </div>
 </template>
@@ -19,6 +19,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url(/images/background.png);
+  background-repeat: no-repeat;
+  background-position: 0 -110px;
 }
 
 h1 {
@@ -33,7 +36,28 @@ h1 {
   padding-bottom: 107px;
 }
 
-h1 > span {
+/* .decorate {
+  position: relative;
+}
+
+.decorate::before {
+  content: '';
+  position: absolute;
+  width: 383.54px;
+  height: 212.93px;
+  background: radial-gradient(
+    77.11% 77.11% at 22.89% 54.76%,
+    #f4bd33 0%,
+    rgba(251, 81, 102, 0) 100%
+  );
+  opacity: 0.2;
+  filter: blur(25px);
+  transform: matrix(1, -0.07, -0.07, -1, 0, 0);
+  top: -80px;
+  left: -50%;
+} */
+
+h1 > .emphasize {
   font-weight: 600;
   font-size: 52px;
   color: hsla(254, 100%, 65%, 1);
