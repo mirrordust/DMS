@@ -21,7 +21,7 @@
   align-items: center;
   background-image: url(/images/background.png);
   background-repeat: no-repeat;
-  background-position: 0 -110px;
+  /* background-size: cover; */
 }
 
 h1 {
@@ -32,7 +32,7 @@ h1 {
   letter-spacing: 0;
   text-align: center;
   color: hsla(255, 53%, 6%, 1);
-  padding-top: 94px;
+  padding-top: 202px;
   padding-bottom: 107px;
 }
 
