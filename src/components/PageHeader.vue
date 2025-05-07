@@ -13,7 +13,7 @@ const handleScroll = () => {
   opacity.value = Math.min(currentY / 200, 1)
 }
 
-const hasBackground = computed(() => {
+const hasScrolled = computed(() => {
   return scrollY.value > 20 ? true : false
 })
 
@@ -22,7 +22,7 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
 </script>
 
 <template>
-  <header class="header" :class="{ 'has-bg': hasBackground }">
+  <header class="header" :class="{ 'has-bg': hasScrolled, 'header-small': hasScrolled }">
     <div class="flex-item ust">
       <IconUst class="svg svg-ust" />
     </div>
@@ -84,13 +84,21 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
 
 @media (min-width: 1024px) {
   .header {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     /* left: calc((100vw - 1440px) / 2); */
     /* right: calc((100vw - 1440px) / 2); */
-    margin: 0 calc((100vw - min(1440px, 100vw)) / 2);
+    /* margin: 0 calc((100vw - min(1440px, 100vw)) / 2); */
   }
 
   @keyframes fadeInDown {
@@ -118,14 +126,9 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
     animation-name: fadeInDown;
   }
 
-  .header {
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-top: 60px;
-    padding-bottom: 30px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+  .header-small {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .svg {
