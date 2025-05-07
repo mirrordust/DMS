@@ -129,6 +129,7 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
   .header-small {
     padding-top: 20px;
     padding-bottom: 20px;
+    border-bottom: 2px solid #dddfdd;
   }
 
   .svg {
