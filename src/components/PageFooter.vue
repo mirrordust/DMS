@@ -3,7 +3,7 @@
     <div class="links">
       <ul>
         <li>
-          <a href="https://dms-shanghai.hkust.edu.hk" class="current_link">
+          <a href="/" class="current_link">
             Digital Meteorological Services Innovation Lab
             <br />
             at HKUST Shanghai Centre
