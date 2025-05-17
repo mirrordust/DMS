@@ -36,17 +36,18 @@ defineProps({
 .news {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+
   background: #ffffff;
   box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.05);
   border-radius: 16px;
   overflow: hidden;
-  align-items: center;
   margin-top: 40px;
   width: 100%;
 }
 
 .image {
-  max-width: 100%;
+  width: min(425.5px, 100%);
 }
 
 img {
@@ -81,6 +82,13 @@ img {
 @media (min-width: 1024px) {
   .detail {
     padding-left: 50px;
+  }
+
+  .news {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: center;
+    align-items: center;
   }
 }
 </style>
